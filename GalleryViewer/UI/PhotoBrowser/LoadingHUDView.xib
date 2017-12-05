@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PhotoBrowserTableViewController" customModule="GalleryViewer" customModuleProvider="target">
+            <connections>
+                <outlet property="progressView" destination="Hd4-nK-E28" id="CPy-hG-kY0"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="356"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Hd4-nK-E28">
+                    <rect key="frame" x="10" y="154" width="355" height="2"/>
+                </progressView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dRm-Rg-IxI">
+                    <rect key="frame" x="0.0" y="102" width="375" height="29"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="frW-0h-dKv">
+                    <rect key="frame" x="177" y="44" width="20" height="20"/>
+                </activityIndicatorView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Hd4-nK-E28" firstAttribute="top" secondItem="dRm-Rg-IxI" secondAttribute="bottom" constant="23" id="3sd-AE-RU6"/>
+                <constraint firstItem="dRm-Rg-IxI" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="102" id="CqD-fO-JII"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="dRm-Rg-IxI" secondAttribute="trailing" id="OoF-pe-QVn"/>
+                <constraint firstAttribute="trailing" secondItem="Hd4-nK-E28" secondAttribute="trailing" constant="10" id="Qpx-3a-UZR"/>
+                <constraint firstItem="Hd4-nK-E28" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="VyE-k0-Nz0"/>
+                <constraint firstItem="frW-0h-dKv" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="XUd-28-4cP"/>
+                <constraint firstItem="frW-0h-dKv" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="44" id="YWy-i2-JE0"/>
+                <constraint firstItem="dRm-Rg-IxI" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="t0s-dq-74J"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="25.5" y="-104"/>
+        </view>
+    </objects>
+</document>
